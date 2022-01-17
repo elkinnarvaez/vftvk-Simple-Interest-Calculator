@@ -1,4 +1,46 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;font-family:arial;color:white}
+h1{color:grey;font-family:verdana}
 
+.maindiv{
+    background-color: #ffffff;
+    color:black;
+    width: 480px;
+    padding: 20px;
+    border-radius: 25px;
+}
 
+.maindiv .form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    position: relative;
+    left: 15%;
+}
+
+.maindiv .form label{
+    text-align: left;
+}
+
+.maindiv .form .rate-container{
+    display: flex;
+    align-items: center;
+}
+
+#principal{
+    width: 70%;
+}
+
+#years{
+    width: fit-content;
+}
+
+#compute{
+    width: fit-content;
+}
+
+#result{
+    position: relative;
+    left: 15%;
+}
