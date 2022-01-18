@@ -6,7 +6,11 @@ function compute()
     var years = document.getElementById("years").value;
 
     // Validation of the principal entry
-    if(isNaN(parseInt(principal)) || parseInt(principal) <= 0){
+    if(isNaN(parseInt(principal))){
+        alert("Empty field. Please enter a valid amount.");
+        document.getElementById("principal").focus();
+    }
+    else if(parseInt(principal) <= 0){
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
